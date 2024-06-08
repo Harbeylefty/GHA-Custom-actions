@@ -23,7 +23,6 @@ jobs:
         with:
           path: ~/.npm
           key: deps-node-modules-${{  hashFiles('**/package-lock-json')   }}
-        uses: 
       - name: Test code
         id: run-tests
         run: npm run test
